@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Puppy.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Puppy.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Puppy {</span>
+    <span class="s0">int </span><span class="s1">puppyAge</span><span class="s0">;</span>
+
+    <span class="s0">public </span><span class="s1">Puppy(String name) {</span>
+        <span class="s2">//This constructor has one parameter, name.</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Name chosen is :&quot; </span><span class="s1">+ name)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setAge(</span><span class="s0">int </span><span class="s1">age) {</span>
+        <span class="s1">puppyAge = age</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public int </span><span class="s1">getAge() {</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Puppy's age is :&quot; </span><span class="s1">+ puppyAge)</span><span class="s0">;</span>
+        <span class="s0">return </span><span class="s1">puppyAge</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s2">/* object creation */</span>
+        <span class="s1">Puppy myPuppy = </span><span class="s0">new </span><span class="s1">Puppy(</span><span class="s3">&quot;kusuma&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s2">/* Call class method to set puppy's age */</span>
+        <span class="s1">myPuppy.setAge(</span><span class="s4">20</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s2">/* Call another class method to get puppy's age */</span>
+        <span class="s1">myPuppy.getAge()</span><span class="s0">;</span>
+
+        <span class="s2">/* You can access instance variable as follows as well */</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Variable Value :&quot; </span><span class="s1">+ myPuppy.puppyAge)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
